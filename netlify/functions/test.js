@@ -7,9 +7,10 @@ exports.handler = async function () {
 
   const response = await fetch(POKE_API);
   const data = await response.json();
+  console.log(JSON.stringify(data));
 
   return {
     statusCode: 200,
-    body: JSON.parse(data),
+    body: JSON.stringify(data),
   };
 };
