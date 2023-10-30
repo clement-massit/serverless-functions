@@ -1,7 +1,9 @@
 import fetch from "node-fetch";
 
 exports.handler = async function () {
-  const POKE_API = "https://pokeapi.co/api/v2/pokedex/kanto";
+  //
+  const POKE_API =
+    "https://raw.githubusercontent.com/clement-massit/serverless-functions/main/netlify/functions/data.csv";
 
   const response = await fetch(POKE_API);
   const data = await response.json();
