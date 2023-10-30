@@ -1,7 +1,6 @@
 import fetch from "node-fetch";
 
 exports.handler = async function () {
-  //
   const POKE_API =
     "https://raw.githubusercontent.com/clement-massit/serverless-functions/main/netlify/functions/data.json";
 
