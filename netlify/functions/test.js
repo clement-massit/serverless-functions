@@ -10,6 +10,6 @@ exports.handler = async function () {
 
   return {
     statusCode: 200,
-    body: data,
+    body: JSON.parse(data),
   };
 };
